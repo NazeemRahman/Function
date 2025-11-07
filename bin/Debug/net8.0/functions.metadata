@@ -1,0 +1,29 @@
+[
+  {
+    "name": "UserAuthentication",
+    "scriptFile": "CSM_UserAuthentication.dll",
+    "entryPoint": "CSM_UserAuthentication.Function.UserAuthentication.Run",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "direction": "In",
+        "type": "httpTrigger",
+        "authLevel": "Function",
+        "methods": [
+          "get"
+        ],
+        "route": "activedirectory/authenticateactivedirectoryuser",
+        "properties": {}
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  }
+]

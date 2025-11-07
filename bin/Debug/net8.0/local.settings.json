@@ -1,0 +1,18 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "Keycloak:TokenEndpoint": "http://localhost:8080/realms/TargetBase/protocol/openid-connect/token",
+    "Keycloak:ClientId": "test-api-client",
+    "Keycloak:ClientSecret": "q8ChiZUWgQRZyOShfDvOLRf47rqsKCQQ",
+    "LLDAP": {
+      "Host": "localhost",
+      "Port": "3890",
+      "BaseDn": "dc=example,dc=com",
+      "UserDnPattern": "uid={0},ou=users,dc=example,dc=com"
+    }
+  },
+
+  
+}
